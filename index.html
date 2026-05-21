@@ -1,11 +1,55 @@
-<button onclick="openMenu()">◼︎◼︎◼︎</button>
+<div class="apps">
 
-<div id="menu" style="display:none;">
-  <a href="calculator.html">電卓</a>
+  <a href="calculator.html" class="app">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png">
+    <span>電卓</span>
+  </a>
+
+  <a href="quiz.html" class="app">
+    <img src="https://cdn-icons-png.flaticon.com/512/3407/3407033.png">
+    <span>問題集</span>
+  </a>
+
 </div>
 
-<script>
-function openMenu(){
-  document.getElementById("menu").style.display="block";
+<style>
+body{
+  background:#111;
+  color:white;
+  font-family:sans-serif;
 }
-</script>
+
+.apps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  max-width:500px;
+  margin:auto;
+  margin-top:100px;
+}
+
+.app{
+  text-decoration:none;
+  color:white;
+  text-align:center;
+}
+
+.app img{
+  width:70px;
+  height:70px;
+  background:#222;
+  padding:15px;
+  border-radius:20px;
+  transition:0.2s;
+}
+
+.app img:hover{
+  transform:scale(1.1);
+  background:#333;
+}
+
+.app span{
+  display:block;
+  margin-top:10px;
+}
+</style>
