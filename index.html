@@ -1,37 +1,40 @@
-<div class="apps">
-
-  <a href="calculator.html" class="app">
-    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png">
-    <span>電卓</span>
-  </a>
-
-  <a href="quiz.html" class="app">
-    <img src="https://cdn-icons-png.flaticon.com/512/3407/3407033.png">
-    <span>問題集</span>
-  </a>
-
-</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>問題係ホームページ</title>
 
 <style>
 body{
   background:#111;
   color:white;
   font-family:sans-serif;
+  text-align:center;
+  margin:0;
+}
+
+h1{
+  margin-top:40px;
+  font-size:40px;
+}
+
+p{
+  color:#aaa;
+  margin-bottom:50px;
 }
 
 .apps{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:30px;
-  max-width:500px;
+  max-width:600px;
   margin:auto;
-  margin-top:100px;
+  padding:20px;
 }
 
 .app{
   text-decoration:none;
   color:white;
-  text-align:center;
 }
 
 .app img{
@@ -51,5 +54,34 @@ body{
 .app span{
   display:block;
   margin-top:10px;
+  font-size:18px;
 }
 </style>
+</head>
+
+<body>
+
+<h1>問題係ホームページ</h1>
+<p>MONDAI LIMITED</p>
+
+<div class="apps">
+
+  <a href="https://sites.google.com/view/monndai-com/%E9%9B%BB%E5%8D%93" class="app">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png">
+    <span>電卓</span>
+  </a>
+
+  <a href="#" class="app">
+    <img src="https://cdn-icons-png.flaticon.com/512/3407/3407033.png">
+    <span>問題集</span>
+  </a>
+
+  <a href="#" class="app">
+    <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png">
+    <span>ツール</span>
+  </a>
+
+</div>
+
+</body>
+</html>
