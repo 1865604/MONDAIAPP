@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>問題係ホームページ</title>
 
 <style>
 body{
@@ -11,16 +10,6 @@ body{
   font-family:sans-serif;
   text-align:center;
   margin:0;
-}
-
-h1{
-  margin-top:20px;
-  font-size:40px;
-}
-
-p{
-  color:#aaa;
-  margin-bottom:50px;
 }
 
 .apps{
@@ -33,65 +22,51 @@ p{
 }
 
 .app{
-  text-decoration:none;
-  color:white;
+  cursor:pointer;
 }
 
 .app img{
   width:90px;
   height:90px;
-  background:#222;
-  padding:15px;
   border-radius:25px;
-  transition:0.2s;
-  object-fit:cover;
-}
-
-.app img:hover{
-  transform:scale(1.1);
-  background:#333;
 }
 
 .app span{
   display:block;
   margin-top:10px;
+  color:white;
   font-size:18px;
-}
-
-.logo{
-  width:140px;
-  margin-top:30px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- ロゴ -->
-<img src="Preview.png 2.jpeg" class="logo">
-
 <h1>問題係ホームページ</h1>
 <p>MONDAI LIMITED</p>
 
 <div class="apps">
 
-  <!-- 電卓 -->
-  <a href="https://sites.google.com/view/monndai-com/%E9%9B%BB%E5%8D%93" class="app">
-    <img src="calculator.png.jpg">
-    <span>電卓</span>
-  </a>
+<!-- 電卓 -->
+<div class="app"
+onclick="window.top.location.href='https://sites.google.com/view/monndai-com/%E9%9B%BB%E5%8D%93'">
+<img src="calculator.png.jpg">
+<span>電卓</span>
+</div>
 
-  <!-- 奥村新聞 -->
-  <a href="https://sites.google.com/view/wwwokumuranews-com/%E3%83%9B%E3%83%BC%E3%83%A0" class="app">
-    <img src="news.png.jpg">
-    <span>新聞</span>
-  </a>
+<!-- 新聞 -->
+<div class="app"
+onclick="window.top.location.href='https://sites.google.com/view/wwwokumuranews-com/%E3%83%9B%E3%83%BC%E3%83%A0'">
+<img src="news.png.jpg">
+<span>新聞</span>
+</div>
 
-  <!-- MONDAISNS -->
-  <a href="https://sites.google.com/view/monndaic/%E3%83%9B%E3%83%BC%E3%83%A0" class="app">
-    <img src="sns.png.jpg">
-    <span>SNS</span>
-  </a>
+<!-- SNS -->
+<div class="app"
+onclick="window.top.location.href='https://sites.google.com/view/monndaic/%E3%83%9B%E3%83%BC%E3%83%A0'">
+<img src="sns.png.jpg">
+<span>SNS</span>
+</div>
 
 </div>
 
