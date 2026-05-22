@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<title>問題係ホームページ</title>
 
 <style>
 body{
@@ -10,6 +11,16 @@ body{
   font-family:sans-serif;
   text-align:center;
   margin:0;
+}
+
+h1{
+  margin-top:20px;
+  font-size:40px;
+}
+
+p{
+  color:#aaa;
+  margin-bottom:50px;
 }
 
 .apps{
@@ -29,6 +40,12 @@ body{
   width:90px;
   height:90px;
   border-radius:25px;
+  object-fit:cover;
+  transition:0.2s;
+}
+
+.app img:hover{
+  transform:scale(1.1);
 }
 
 .app span{
@@ -37,10 +54,18 @@ body{
   color:white;
   font-size:18px;
 }
+
+.logo{
+  width:140px;
+  margin-top:30px;
+}
 </style>
 </head>
 
 <body>
+
+<!-- ロゴ -->
+<img src="Preview.png 2.jpeg" class="logo">
 
 <h1>問題係ホームページ</h1>
 <p>MONDAI LIMITED</p>
